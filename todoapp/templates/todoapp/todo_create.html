@@ -1,0 +1,26 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> -->
+    {% extends 'todo_list2.html' %}
+    {% block content %}
+    <center>
+        <h2>Create a Todo</h2>
+        <form action="" method="post">
+            <!-- csrf- cross server request fordrule token -->
+            {% csrf_token %}
+            {{form.as_p}}
+            <button class="btn btn-primary" type="submit">Submit</button>
+            
+        </form>
+    </center>
+    {% endblock %}
+<!-- </body>
+</html> -->
+<!-- <input type="text" placeholder="taskname">
+        <input type="text" placeholder="due-date">
